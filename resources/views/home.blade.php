@@ -7,7 +7,7 @@
                 @include('top_bar')
 
                 <!-- no notes available -->
-                {{-- @if(count($notes) == 0) --}}
+                @if(count($notes) == 0)
 
                 <div class="row mt-5">
                     <div class="col text-center">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
 
-                {{-- @else --}}
+                @else
 
                 <!-- notes are available -->
                 <div class="d-flex justify-content-end mb-3">
@@ -27,11 +27,11 @@
                     </a>
                 </div>
 
-                {{-- @foreach($notes as $note)
+                @foreach($notes as $note)
                 @include('note')
-                @endforeach --}}
+                @endforeach
 
-                {{-- @endif --}}
+                @endif
             </div>
         </div>
     </div>
