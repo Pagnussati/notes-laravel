@@ -8,7 +8,7 @@ class User extends Model
 {
     public function notes()
     {
+        // Dizendo ao model do usuario que pode haver muitas notes (hasMany)
         return $this->hasMany(Note::class);
-        // Comentario de teste do git
     }
 }
